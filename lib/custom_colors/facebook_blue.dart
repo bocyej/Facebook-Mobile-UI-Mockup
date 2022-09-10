@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const MaterialColor primaryBlack = MaterialColor(
+const MaterialColor facebookBlue = MaterialColor(
   _facebookPrimaryValue,
   <int, Color>{
     50: Color(0xFF1877F5),
