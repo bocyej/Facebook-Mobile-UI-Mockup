@@ -57,6 +57,15 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - 
+
+  fonts:
+    - family: Klavika
+      fonts:
+        - asset: assets/fonts/klavika-medium.otf
+        - asset: assets/fonts/klavika-bold.otf
+          weight: 700
 
   # To add assets to your application, add an assets section, like this:
   # assets:
