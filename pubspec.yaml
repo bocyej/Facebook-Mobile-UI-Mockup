@@ -61,6 +61,8 @@ flutter:
     - assets/icons/icon1.jpg
     - assets/photos/image1.jpg
     - assets/photos/image2.jpg
+    - assets/photos/image3.jpg
+    - assets/photos/image4.jpg
 
   fonts:
     - family: Klavika
