@@ -6,6 +6,7 @@ class CreatePost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       child: Row(
         children: [
           Container(
@@ -29,12 +30,7 @@ class CreatePost extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(left: 5, top: 10, right: 5, bottom: 7),
             child: InkWell(
-              onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-                // );
-              },
+              onTap: () {},
               child: Container(
                 padding: const EdgeInsets.only(left: 15, top: 9, bottom: 10),
                 width: 220,
@@ -59,12 +55,7 @@ class CreatePost extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(left: 10, top: 10, right: 5, bottom: 7),
             child: InkWell(
-              onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-                // );
-              },
+              onTap: () {},
               child: Container(
                 child: const Icon(
                   Icons.filter_rounded,

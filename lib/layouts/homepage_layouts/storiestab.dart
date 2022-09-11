@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../custom_colors/facebook_blue.dart';
-
-import '../layouts/stories.dart';
+import 'stories.dart';
 
 class StoriesTab extends StatelessWidget {
   const StoriesTab({Key? key}) : super(key: key);
@@ -10,6 +8,7 @@ class StoriesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../custom_colors/facebook_blue.dart';
-
-import '../layouts/reels.dart';
+import 'reels.dart';
 
 class ReelsTab extends StatelessWidget {
   const ReelsTab({Key? key}) : super(key: key);
@@ -10,6 +8,7 @@ class ReelsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
