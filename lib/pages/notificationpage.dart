@@ -4,8 +4,12 @@ import 'package:facebook/custom_colors/facebook_blue.dart';
 
 import '../layouts/notificationspage_layouts/notifications_appbar.dart';
 import '../layouts/notificationspage_layouts/notifications_categories.dart';
-import '../layouts/notificationspage_layouts/notifications_read.dart';
-import '../layouts/notificationspage_layouts/notifications_unread.dart';
+import '../layouts/notificationspage_layouts/notifications_read_1.dart';
+import '../layouts/notificationspage_layouts/notifications_read_2.dart';
+import '../layouts/notificationspage_layouts/notifications_unread_1.dart';
+import '../layouts/notificationspage_layouts/notifications_unread_2.dart';
+import '../layouts/notificationspage_layouts/notifications_unread_3.dart';
+import '../layouts/notificationspage_layouts/friendrequest.dart';
 
 class NotificationsPage extends StatelessWidget {
   const NotificationsPage({Key? key}) : super(key: key);
@@ -41,7 +45,7 @@ class NotificationsPage extends StatelessWidget {
                     ],
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  const UnreadNotifications(),
+                  const UnreadNotifications1(),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -74,7 +78,7 @@ class NotificationsPage extends StatelessWidget {
                     ],
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  const UnreadNotifications(),
+                  const FriendRequest(),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -91,9 +95,10 @@ class NotificationsPage extends StatelessWidget {
                     ],
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  const UnreadNotifications(),
-                  const ReadNotifications(),
-                  const UnreadNotifications(),
+                  const UnreadNotifications2(),
+                  const ReadNotifications1(),
+                  const ReadNotifications2(),
+                  const UnreadNotifications3(),
                 ],
               ),
             ],
