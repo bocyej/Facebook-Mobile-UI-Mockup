@@ -42,7 +42,7 @@ class UnreadNotifications3 extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const Padding(padding: EdgeInsets.only(top: 13)),
+                      const Padding(padding: EdgeInsets.only(top: 2)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -55,7 +55,7 @@ class UnreadNotifications3 extends StatelessWidget {
                             ),
                           ),
                           const Text(
-                            ' was live. "livestreamtitle"',
+                            ' reacted to your comment:',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 14,
@@ -82,7 +82,21 @@ class UnreadNotifications3 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: const [
                           Text(
-                            '3 hours ago                                                          ',
+                            '"commentcomment"',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                          Padding(padding: EdgeInsets.only(right: 110)),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: const [
+                          Text(
+                            '3 hours ago',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 11,
@@ -90,6 +104,7 @@ class UnreadNotifications3 extends StatelessWidget {
                             ),
                             textAlign: TextAlign.left,
                           ),
+                          Padding(padding: EdgeInsets.only(right: 185)),
                         ],
                       ),
                     ],

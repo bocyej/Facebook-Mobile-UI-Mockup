@@ -54,14 +54,14 @@ class ReadNotifications1 extends StatelessWidget {
                             ),
                           ),
                           const Text(
-                            ' mentioned  ',
+                            ' mentioned',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 14,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          const Padding(padding: EdgeInsets.only(right: 25)),
+                          const Padding(padding: EdgeInsets.only(right: 35)),
                           Container(
                             padding: const EdgeInsets.all(0),
                             child: InkWell(
@@ -95,7 +95,7 @@ class ReadNotifications1 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: const [
                           Text(
-                            '6 hours ago                                                         ',
+                            '12 hours ago                                                        ',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 11,

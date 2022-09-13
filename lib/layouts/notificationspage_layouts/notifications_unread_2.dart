@@ -55,14 +55,14 @@ class UnreadNotifications2 extends StatelessWidget {
                             ),
                           ),
                           const Text(
-                            ' was live. "livestreamtitle"',
+                            ' added a post.',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 14,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          const Padding(padding: EdgeInsets.only(right: 25)),
+                          const Padding(padding: EdgeInsets.only(right: 90)),
                           Container(
                             padding: const EdgeInsets.all(0),
                             child: InkWell(
@@ -82,7 +82,7 @@ class UnreadNotifications2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: const [
                           Text(
-                            '3 hours ago                                                          ',
+                            '6 hours ago                                                         ',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 11,
