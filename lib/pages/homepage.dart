@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             children: [
               const CreatePost(),
               Divider(
-                thickness: 7,
+                thickness: 8,
                 color: Colors.grey.shade400,
               ),
               DefaultTabController(
@@ -59,22 +59,22 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Divider(
-                thickness: 7,
+                thickness: 8,
                 color: Colors.grey.shade400,
               ),
               const Posts(),
               Divider(
-                thickness: 7,
+                thickness: 8,
                 color: Colors.grey.shade400,
               ),
               const Posts(),
               Divider(
-                thickness: 7,
+                thickness: 8,
                 color: Colors.grey.shade400,
               ),
               const Posts(),
               Divider(
-                thickness: 7,
+                thickness: 8,
                 color: Colors.grey.shade400,
               ),
             ],
