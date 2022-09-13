@@ -245,7 +245,7 @@ class FeedPosts extends StatelessWidget {
                 child: Row(
                   children: const [
                     Icon(
-                      Icons.message_outlined,
+                      Icons.messenger_outline,
                       color: Colors.grey,
                       size: 15,
                     ),
@@ -269,9 +269,9 @@ class FeedPosts extends StatelessWidget {
                 child: Row(
                   children: const [
                     Icon(
-                      Icons.share,
+                      Icons.eco_outlined,
                       color: Colors.grey,
-                      size: 15,
+                      size: 17,
                     ),
                     Text(
                       ' Share',
