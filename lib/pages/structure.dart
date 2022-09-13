@@ -4,8 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../custom_colors/facebook_blue.dart';
 
-import '../layouts/appbar.dart';
-
 import '../pages/homepage.dart';
 import '../pages/marketplace.dart';
 import '../pages/profilepage.dart';
@@ -32,47 +30,72 @@ class StructurePage extends StatefulWidget {
 class _StructurePageState extends State<StructurePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const FAppBar(),
-      body: DefaultTabController(
-        length: 6, // length of tabs
-        initialIndex: 0,
-        child: Column(
-          children: <Widget>[
-            Container(
-              color: Colors.white,
-              child: TabBar(
-                labelColor: facebookBlue,
-                unselectedLabelColor: Colors.grey.shade700,
-                tabs: const [
-                  Tab(icon: Icon(Icons.home)),
-                  Tab(icon: Icon(Icons.storefront_outlined)),
-                  Tab(icon: Icon(Icons.account_circle_outlined)),
-                  Tab(icon: Icon(Icons.newspaper)),
-                  Tab(icon: Icon(Icons.notifications_outlined)),
-                  Tab(icon: Icon(Icons.person)),
+    return DefaultTabController(
+      length: 6,
+      child: Scaffold(
+        body: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return <Widget>[
+              SliverAppBar(
+                title: const Text(
+                  "Facebook",
+                  style: TextStyle(
+                    color: facebookBlue,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Klavika',
+                  ),
+                ),
+                backgroundColor: Colors.white,
+                elevation: 0.0,
+                floating: true,
+                pinned: true,
+                snap: true,
+                actions: <Widget>[
+                  IconButton(
+                    icon: const Icon(Icons.search),
+                    tooltip: 'Search',
+                    onPressed: () {},
+                    color: Colors.black,
+                  ),
+                  const Padding(padding: EdgeInsets.only(right: 5)),
+                  IconButton(
+                    icon: const Icon(
+                      Icons.maps_ugc,
+                      size: 20,
+                    ),
+                    tooltip: 'Messenger',
+                    onPressed: () {},
+                    color: Colors.black,
+                  ),
+                  const Padding(padding: EdgeInsets.only(right: 5)),
                 ],
-              ),
-            ),
-            Container(
-              height: 564,
-              decoration: const BoxDecoration(
-                border: Border(
-                  top: BorderSide(color: Colors.grey, width: 0.5),
+                bottom: TabBar(
+                  indicatorColor: facebookBlue,
+                  labelColor: facebookBlue,
+                  unselectedLabelColor: Colors.grey.shade700,
+                  tabs: const <Tab>[
+                    Tab(icon: Icon(Icons.home)),
+                    Tab(icon: Icon(Icons.storefront_outlined)),
+                    Tab(icon: Icon(Icons.account_circle_outlined)),
+                    Tab(icon: Icon(Icons.newspaper)),
+                    Tab(icon: Icon(Icons.notifications_outlined)),
+                    Tab(icon: Icon(Icons.person)),
+                  ],
                 ),
               ),
-              child: const TabBarView(
-                children: <Widget>[
-                  HomePage(),
-                  MarketplacePage(),
-                  HomePage(),
-                  FeedsPage(),
-                  NotificationsPage(),
-                  HomePage(),
-                ],
-              ),
-            ),
-          ],
+            ];
+          },
+          body: const TabBarView(
+            children: <Widget>[
+              HomePage(),
+              MarketplacePage(),
+              ProfilePage(),
+              FeedsPage(),
+              NotificationsPage(),
+              MenuPage(),
+            ],
+          ),
         ),
       ),
     );
