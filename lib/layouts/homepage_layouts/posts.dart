@@ -138,11 +138,19 @@ class Posts extends StatelessWidget {
             ],
           ),
           Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: InkWell(
               onTap: () {},
               child: Container(
-                child: Image.asset('assets/photos/image3.jpg'),
+                height: 230,
+                width: 350,
+                // child: Image.asset('assets/photos/image3.jpg'),
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/photos/image3.jpg"),
+                    fit: BoxFit.fill,
+                  ),
+                ),
               ),
             ),
           ),
