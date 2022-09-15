@@ -12,6 +12,10 @@ import '../layouts/menupage_layouts/shortcut_videosonwatch.dart';
 import '../layouts/menupage_layouts/shortcut_memories.dart';
 import '../layouts/menupage_layouts/shortcut_saved.dart';
 import '../layouts/menupage_layouts/shortcut_pages.dart';
+import '../layouts/menupage_layouts/shortcut_reels.dart';
+import '../layouts/menupage_layouts/shortcut_dating.dart';
+import '../layouts/menupage_layouts/shortcut_events.dart';
+import '../layouts/menupage_layouts/shortcut_gaming.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({Key? key}) : super(key: key);
@@ -84,21 +88,179 @@ class MenuPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      ShortcutSaved(),
+                      ShortcutReels(),
                       Padding(padding: EdgeInsets.only(right: 10)),
-                      ShortcutPages(),
+                      ShortcutDating(),
                     ],
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      ShortcutSaved(),
+                      ShortcutEvents(),
                       Padding(padding: EdgeInsets.only(right: 10)),
-                      ShortcutPages(),
+                      ShortcutGaming(),
                     ],
                   ),
+                  const Padding(padding: EdgeInsets.only(bottom: 20)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 30,
+                        width: 300,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey.shade300,
+                            elevation: 0.0,
+                            padding: const EdgeInsets.all(0),
+                          ),
+                          child: const Text(
+                            'Edit public details',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Padding(padding: EdgeInsets.only(bottom: 20)),
+                  const Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                  Container(
+                    height: 50,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Row(
+                        children: [
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          Icon(
+                            Icons.favorite,
+                            color: Colors.grey.shade600,
+                            size: 25,
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          const Text(
+                            'Community resources',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 90)),
+                          const Icon(
+                            Icons.keyboard_arrow_down,
+                            color: Colors.black,
+                            size: 25,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                  Container(
+                    height: 50,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Row(
+                        children: [
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          Icon(
+                            Icons.question_mark,
+                            color: Colors.grey.shade600,
+                            size: 25,
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          const Text(
+                            'Help & support',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 133)),
+                          const Icon(
+                            Icons.keyboard_arrow_down,
+                            color: Colors.black,
+                            size: 25,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const Divider(
+                    height: 2,
+                    color: Colors.grey,
+                  ),
+                  Container(
+                    height: 50,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Row(
+                        children: [
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          Icon(
+                            Icons.settings,
+                            color: Colors.grey.shade600,
+                            size: 25,
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 15)),
+                          const Text(
+                            'Settings & privacy',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const Padding(padding: EdgeInsets.only(left: 115)),
+                          const Icon(
+                            Icons.keyboard_arrow_down,
+                            color: Colors.black,
+                            size: 25,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 30,
+                        width: 300,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey.shade300,
+                            elevation: 0.0,
+                            padding: const EdgeInsets.all(0),
+                          ),
+                          child: const Text(
+                            'Logout',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Padding(padding: EdgeInsets.only(bottom: 20)),
                 ],
               ),
             ],
