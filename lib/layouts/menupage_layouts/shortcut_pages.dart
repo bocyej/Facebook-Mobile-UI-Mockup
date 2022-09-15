@@ -43,7 +43,7 @@ class ShortcutPages extends StatelessWidget {
               children: const [
                 Padding(padding: EdgeInsets.only(left: 10)),
                 Text(
-                  'Marketplace',
+                  'Pages',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 13,
