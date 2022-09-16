@@ -59,10 +59,14 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icons/icon1.jpg
-    - assets/photos/image1.jpg
-    - assets/photos/image2.jpg
-    - assets/photos/image3.jpg
-    - assets/photos/image4.jpg
+    - assets/photos/vimage1.jpg
+    - assets/photos/vimage2.jpg
+    - assets/photos/simage1.jpg
+    - assets/photos/himage1.jpg
+    - assets/photos/himage2.jpg
+    - assets/photos/himage3.jpg
+    - assets/photos/himage4.jpg
+    - assets/photos/himage5.jpg
 
   fonts:
     - family: Klavika
