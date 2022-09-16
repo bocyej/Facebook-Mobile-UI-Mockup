@@ -147,7 +147,7 @@ class Posts extends StatelessWidget {
                 // child: Image.asset('assets/photos/image3.jpg'),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/photos/image3.jpg"),
+                    image: AssetImage("assets/photos/himage1.jpg"),
                     fit: BoxFit.fill,
                   ),
                 ),

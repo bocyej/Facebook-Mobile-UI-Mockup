@@ -14,7 +14,7 @@ class ProductPosts extends StatelessWidget {
             Container(
               height: 150,
               width: 150,
-              child: Image.asset('assets/photos/image4.jpg'),
+              child: Image.asset('assets/photos/simage1.jpg'),
             ),
             const Padding(padding: EdgeInsets.only(top: 5)),
             Row(

@@ -142,7 +142,7 @@ class FeedPosts extends StatelessWidget {
             child: InkWell(
               onTap: () {},
               child: Container(
-                child: Image.asset('assets/photos/image3.jpg'),
+                child: Image.asset('assets/photos/himage1.jpg'),
               ),
             ),
           ),

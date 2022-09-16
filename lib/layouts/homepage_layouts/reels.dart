@@ -18,7 +18,7 @@ class Reels extends StatelessWidget {
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 image: DecorationImage(
-                  image: AssetImage("assets/photos/image2.jpg"),
+                  image: AssetImage("assets/photos/vimage2.jpg"),
                   fit: BoxFit.fill,
                 ),
               ),

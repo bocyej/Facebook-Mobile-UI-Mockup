@@ -18,7 +18,7 @@ class Stories extends StatelessWidget {
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 image: DecorationImage(
-                  image: AssetImage("assets/photos/image1.jpg"),
+                  image: AssetImage("assets/photos/vimage1.jpg"),
                   fit: BoxFit.fill,
                 ),
               ),
