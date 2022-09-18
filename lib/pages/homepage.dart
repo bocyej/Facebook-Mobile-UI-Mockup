@@ -6,7 +6,11 @@ import '../layouts/homepage_layouts/createpost.dart';
 import '../layouts/homepage_layouts/storiestab.dart';
 import '../layouts/homepage_layouts/reelstab.dart';
 
-import '../layouts/homepage_layouts/posts.dart';
+import '../layouts/homepage_layouts/postsone.dart';
+import '../layouts/homepage_layouts/poststwo.dart';
+import '../layouts/homepage_layouts/poststhree.dart';
+import '../layouts/homepage_layouts/postsfour.dart';
+import '../layouts/homepage_layouts/postsfive.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -62,17 +66,27 @@ class HomePage extends StatelessWidget {
                 thickness: 8,
                 color: Colors.grey.shade400,
               ),
-              const Posts(),
+              const PostOne(),
               Divider(
                 thickness: 8,
                 color: Colors.grey.shade400,
               ),
-              const Posts(),
+              const PostTwo(),
               Divider(
                 thickness: 8,
                 color: Colors.grey.shade400,
               ),
-              const Posts(),
+              const PostThree(),
+              Divider(
+                thickness: 8,
+                color: Colors.grey.shade400,
+              ),
+              const PostFour(),
+              Divider(
+                thickness: 8,
+                color: Colors.grey.shade400,
+              ),
+              const PostFive(),
               Divider(
                 thickness: 8,
                 color: Colors.grey.shade400,
